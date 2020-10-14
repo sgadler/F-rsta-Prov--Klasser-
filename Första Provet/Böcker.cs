@@ -30,36 +30,60 @@ namespace Första Provet
 
         public int Evaluate()
         {
-        
+            rarity = generator.Next(1,4);
+            int slump = generator.Next(1,151);
+
+            int rättPris = actualValue * rarity;
+
+
         }
 
         public string GetCategory()
         {
-            string[]
+            List<string> category = new List<string>() {"book1","book2","book3"};
+            int slump = generator.Next(1,4);
+            string nothing = "";
+
+            if (slump == 1)
+            {
+                return category[0];
+            }
+            if (slump == 2)
+            {
+                return category[1];
+            }
+            if (slump == 3)
+            {
+                return category[2];
+            }
+            else 
+            {
+                return nothing;
+            }
         }
 
         public string GetName()
         {
             List<string> namn = new List<string>() {"namn1","namn2","namn3"};
             int slump = generator.Next(1,4);
-            string name;
+            string nothing = "";
 
             if (slump == 1)
             {
-                name = namn[0];
-                Console.WriteLine(name);
+                return namn[0];
             }
             if (slump == 2)
             {
-                name = namn[1];
-                Console.WriteLine(name);
+                return namn[1];
             }
             if (slump == 3)
             {
-                name = namn[2];
-                Console.WriteLine(name);
+                return namn[2];
             }
-            Console.ReadLine();
+            else 
+            {
+                return nothing;
+            }
         }
 
         public bool IsCursed()

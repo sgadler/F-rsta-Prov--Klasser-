@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Första_Provet
 {
@@ -6,8 +7,7 @@ namespace Första_Provet
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
+            Kunder k1 = new Kunder(); 
         }
     }
 }

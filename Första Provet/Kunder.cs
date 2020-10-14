@@ -4,15 +4,8 @@ namespace Första Provet
 {
     public class Kunder
     {
-        int artifaktSamlare = 0; 
-
-            public void ArtifaktSamlarLevel()
-    {
-        if (artifaktSamlare = 1)
-        {
-            string 
-        }
-    }
+        int pengar = 0;
+        int köpare = 0;
 
     }
 }
