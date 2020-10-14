@@ -1,5 +1,5 @@
 using System;
-
+using System.Collections.Generic;
 namespace Första Provet
 {
     public class Böcker
@@ -35,14 +35,31 @@ namespace Första Provet
 
         public string GetCategory()
         {
-
+            string[]
         }
 
         public string GetName()
         {
-            string[] Namn = {"namn1","namn2","namn3"};
+            List<string> namn = new List<string>() {"namn1","namn2","namn3"};
+            int slump = generator.Next(1,4);
+            string name;
 
-            if (book)
+            if (slump == 1)
+            {
+                name = namn[0];
+                Console.WriteLine(name);
+            }
+            if (slump == 2)
+            {
+                name = namn[1];
+                Console.WriteLine(name);
+            }
+            if (slump == 3)
+            {
+                name = namn[2];
+                Console.WriteLine(name);
+            }
+            Console.ReadLine();
         }
 
         public bool IsCursed()
@@ -55,7 +72,7 @@ namespace Första Provet
             }
             else
             {
-                
+                return cursed = true||false;
             }
         }
     }
